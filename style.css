@@ -1,0 +1,13 @@
+body {
+  font-family: sans-serif;
+  margin: 20px;
+  background: #fefefe;
+  color: #333;
+}
+.quiz-container {
+  max-width: 400px;
+  margin: auto;
+}
+button {
+  margin-top: 20px;
+}
