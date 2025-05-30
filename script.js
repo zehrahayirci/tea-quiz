@@ -22,6 +22,12 @@ const questions = [
   }
 ];
 
+function startQuiz() {
+  document.getElementById("start-screen").style.display = "none";
+  document.getElementById("quiz-screen").style.display = "block";
+  showQuestion();
+}
+
 let currentQuestion = 0;
 let selectedTeas = [];
 
@@ -59,4 +65,3 @@ function showResult(tea) {
   document.getElementById("result").innerHTML = `🌿 You should try: <strong>${tea}</strong>!`;
 }
 
-showQuestion();

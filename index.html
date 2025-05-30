@@ -8,9 +8,19 @@
 </head>
 <body>
   <div class="quiz-container">
-    <h1>🍵 What Obubu Tea Should You Try?</h1>
-    <div id="quiz"></div>
-    <div id="result"></div>
+    <!-- Start Page -->
+    <div id="start-screen">
+      <img src="start-image.png" alt="Start Quiz" class="hero-image" />
+      <h1>🍃 What Obubu Tea You Should Try</h1>
+      <p>Answer a few simple questions and get a tea recommendation based on your taste.</p>
+      <button onclick="startQuiz()">Start Quiz</button>
+    </div>
+
+    <!-- Quiz -->
+    <div id="quiz-screen" style="display: none;">
+      <div id="quiz"></div>
+      <div id="result"></div>
+    </div>
   </div>
 
   <script src="script.js"></script>
