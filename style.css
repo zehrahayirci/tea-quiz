@@ -13,6 +13,25 @@ body {
   padding: 20px;
 }
 
+.question-image {
+  display: block;
+  max-width: 80px;
+  height: auto;
+  margin: 0 auto 10px;
+}
+
+.question-gif-row {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+
+.question-gif {
+  max-width: 70px;
+  height: auto;
+}
+
 #start-screen {
   display: flex;
   flex-direction: column;
@@ -20,6 +39,116 @@ body {
   justify-content: center;
   height: 100vh;
   text-align: center;
+}
+
+.gif-row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.start-gif {
+  width: 50px;
+  height: auto;
+}
+
+.bottom-right-note {
+  bottom: 10px;
+  right: 10px;
+  font-size: 12px;
+  color: #333;
+  font-family: 'PixelifySans', sans-serif;
+}
+
+/* Result screen (vertical layout) */
+.result-container {
+  text-align: center;
+  padding: 20px;
+}
+
+.result-tea-image {
+  width: 140px;
+  border-radius: 12px;
+  display: block;
+  margin: 20px auto;
+}
+
+.tea-name {
+  font-size: 24px;
+  margin: 10px 0 0;
+}
+
+.tea-tagline {
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 8px;
+}
+
+.description-flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  margin: 20px auto;
+  max-width: 90%;
+  flex-wrap: nowrap;
+}
+
+.description-text {
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: left;
+  flex: 1 1 70%;
+  max-width: none;
+}
+
+.harvest-badge {
+  flex: 0 0 30%;
+  max-width: 80px;
+  height: auto;
+  align-self: center;
+}
+
+.brew-title {
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.brew-image {
+  width: 180px;
+  display: block;
+  margin: 10px auto;
+}
+
+.links-row {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.result-link {
+  text-align: center;
+  text-decoration: none;
+  color: black;
+}
+
+.result-link img {
+  width: 48px;
+  margin-bottom: 5px;
+}
+
+.restart {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.restart img {
+  width: 60px;
+  margin-bottom: 5px;
 }
 
 .pixel-title {
@@ -57,6 +186,7 @@ body {
   line-height: 1.5;
   margin-bottom: 30px;
 }
+
 .quiz-container {
   max-width: 400px;
   margin: 0 auto;
@@ -99,8 +229,99 @@ button.selected {
   opacity: 0.7;
 }
 
+.result-image {
+  display: block;
+  margin: 20px auto;
+  max-width: 90%;
+  height: auto;
+  border-radius: 12px;
+}
+
 #result {
   font-size: 20px;
   text-align: center;
   margin-top: 20px;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 600px) {
+  .quiz-container {
+    padding: 20px;
+  }
+
+  .pixel-sub {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
+  .pixel-title {
+    font-size: 22px;
+  }
+
+  .question-text {
+    font-size: 18px;
+  }
+
+  button {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .result-tea-image {
+    width: 120px;
+  }
+
+  .tea-name {
+    font-size: 20px;
+  }
+
+  .tea-tagline {
+    font-size: 14px;
+  }
+
+  .description-text {
+    font-size: 16px;
+    text-align: left;
+    line-height: 1.5;
+  }
+
+  .description-flex {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+  }
+
+  .harvest-badge {
+    width: 70px;
+    height: auto;
+    align-self: center;
+  }
+
+  .brew-image {
+    width: 160px;
+  }
+
+  .result-link img {
+    width: 52px !important;
+  }
+
+  .result-link p {
+    font-size: 16px !important;
+    line-height: 1.4;
+  }
+
+  .restart img {
+    width: 60px !important;
+  }
+
+  .restart p {
+    font-size: 48px;
+  }
+
+  .links-row {
+    gap: 28px;
+    margin-top: 30px;
+  }
 }
