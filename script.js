@@ -87,7 +87,7 @@ const quizData = [
 ];
 
 const teaInfo = {
-  "Sencha of Spring Sun": {
+  "Sencha of the Spring Sun": {
     "title": "You have found...",
     "season": "Spring",
     "learnLink": "https://obubutea.com/shop/green-tea/sencha/sencha-of-the-spring-sun/",
